@@ -1,3 +1,12 @@
+*   Remove deprecated support for `to_time` to preserve the system local time. It will now always preserve the receiver
+    timezone.
+
+    *Rafael Mendonça França*
+
+*   Deprecate `config.active_support.to_time_preserves_timezone`.
+
+    *Rafael Mendonça França*
+
 *   Add `ActiveSupport::Cache::Store#namespace=` and `#namespace`.
 
     Can be used as an alternative to `Store#clear` in some situations such as parallel
